@@ -1,0 +1,5 @@
+D:\Users\pbhung.khh\Documents\Visual Studio 2010\Websites\TraCuuVB\bin\TraCuuVB.dll
+D:\Users\pbhung.khh\Documents\Visual Studio 2010\Websites\TraCuuVB\bin\TraCuuVB.pdb
+D:\Users\pbhung.khh\Documents\Visual Studio 2010\Websites\TraCuuVB\obj\Debug\ResolveAssemblyReference.cache
+D:\Users\pbhung.khh\Documents\Visual Studio 2010\Websites\TraCuuVB\obj\Debug\TraCuuVB.dll
+D:\Users\pbhung.khh\Documents\Visual Studio 2010\Websites\TraCuuVB\obj\Debug\TraCuuVB.pdb

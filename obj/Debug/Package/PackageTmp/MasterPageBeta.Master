@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageBeta.master.cs" Inherits="TraCuuVB.MasterPageBeta" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Tra cuu van ban</title> 
+    <link rel="SHORTCUT ICON" href="images/logo/logo.ico" /> 
+    
+    <%--Layout toàn bộ trang web--%>    
+    <link href="~/css/layoutGUI.css" rel="stylesheet" type="text/css" />
+
+      <script type="text/javascript" src="./jquery/jquery-1.7.2.min.js"></script>
+   <%---New table --%>         
+    <link href="./table/media/css/jquery.dataTables_themeroller.css" rel="stylesheet" type="text/css" />
+    <link href="./table/themes/smoothness/jquery-ui-1.8.4.custom.css" rel="stylesheet"  type="text/css" />           
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    
+    </asp:ContentPlaceHolder>
+   
+</head>
+<body style="font-family:Tahoma; font-size: 12px;">
+    <form id="form1" runat="server">
+    
+    <div id="wrapper">
+    <div id="base-layer">    
+    
+    <div id="head" class="botron">
+    <div id="banner">       
+             
+     </div>  <%--end div banner--%>
+     
+    <%--Div Menu ---%>
+   
+          <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>                       
+                        <asp:MenuItem NavigateUrl="~/TraCuu.aspx" Text="1. Tra cứu văn bản"/>
+                        <asp:MenuItem NavigateUrl="~/CapNhat.aspx" Text="2. Cập nhật văn bản mới"/>                        
+                        <asp:MenuItem NavigateUrl="~/DangNhap.aspx" Text="3. Đăng nhập"/>                        
+                        <asp:MenuItem NavigateUrl="~/DoiMatKhau.aspx" Text="4. Đổi mật khẩu"/>                        
+                         <asp:MenuItem NavigateUrl="~/QuanTri.aspx" Text="5. Quản trị"/> 
+                    </Items>                    
+                </asp:Menu>
+            </div>       
+   
+   <%--End Div Menu ---%>     
+    
+    </div> <%--End Div Head--%>
+
+ <div id="info" class="botron">
+         <asp:Label ID="lbThongTinNSD" runat="server" Font-Bold="True" Font-Names="Tahoma" ForeColor="DimGray" Width="150px"></asp:Label>         
+         <asp:LinkButton ID="lnkLogOut" runat="server" onclick="lnkLogOut_Click">[Đăng xuất]</asp:LinkButton>
+        <div id="infodate" class="botron">
+         <asp:Label ID="lbHomNay" runat="server" Width="200px" ForeColor="DimGray" Font-Bold="true"></asp:Label>&nbsp;  
+         </div>
+        
+    </div>
+
+<div id="content" >  
+   <%-- The page content that inherits master page goes here --%>       
+
+   
+       
+    <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+    
+    
+</div>  <%--End Div Content--%>      
+        
+            
+
+    <div class="footer">       
+        
+    </div>       
+        
+        
+    </div> <%--end baselayer--%>
+    </div> <%--end wrapper--%>
+    
+
+    
+    </form>  
+
+
+
+
+</body>
+</html>

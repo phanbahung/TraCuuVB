@@ -1,0 +1,21 @@
+
+.icon-importexcel {
+    background-image: url(Images/icon_excel.png);
+    background-position: center center;
+    height: 16px;
+    width: 16px;
+}
+
+.icon-search {
+    background-image: url(Images/search.gif);
+    background-position: center center;
+    height: 16px;
+    width: 16px;
+}
+
+.icon-back {
+    background-image: url(Images/lt.gif);
+    background-position: center center;
+    height: 16px;
+    width: 16px;
+}
